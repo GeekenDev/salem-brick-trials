@@ -16,7 +16,7 @@ export function TimelineSection() {
             <li key={i} className="relative flex gap-5 pb-8 last:pb-0">
               <div className="flex flex-col items-center">
                 <span className="mt-1 flex size-3 shrink-0 rounded-full bg-primary ring-4 ring-accent" />
-                {i < TIMELINE.length - 1 && <span className="mt-1 w-px flex-1 bg-border" />}
+                {i < TIMELINE.length - 1 && <span className="mt-1 w-px flex-1 bg-border" /> }
               </div>
               <div className="-mt-1 pb-2">
                 <span className="font-mono text-xs uppercase tracking-wide text-accent-foreground">
