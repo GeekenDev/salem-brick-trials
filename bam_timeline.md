@@ -1,4 +1,4 @@
-This timeline is based on BAM’s lawsuit, which can be found here: https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc. The allegations in the lawsuit have not been proven in court, and I have added Chrystal’s full response to them. Where possible, I have linked the allegations to corresponding portions of Reckless Ben’s publicly available Part 1 video so readers can compare both accounts for themselves. Read this as a summary of BAM’s position, not as a final determination of what happened.
+This timeline is based on BAM’s lawsuit.
 ---
 February 2, 2023:
 

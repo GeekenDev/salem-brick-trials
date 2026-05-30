@@ -51,11 +51,11 @@ export default async function BamTimelinePage() {
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance md:text-5xl">
               Bricks and Minifgs Side of The Story
             </h1>
-            <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
+            {/* <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
               This page keeps the same chronological structure as the homepage timeline, but breaks
               each date into source-specific bullets so the claims, responses, and video references
               are easier to scan side by side.
-            </p>
+            </p> */}
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-[minmax(0,1.4fr)_minmax(280px,0.8fr)]">
