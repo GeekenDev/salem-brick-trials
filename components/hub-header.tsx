@@ -46,8 +46,8 @@ export function HubHeader() {
         </nav>
 
         <Button asChild size="sm">
-          <a href="https://www.youtube.com/watch?v=wscQpkcwgNU" target="_blank" rel="noreferrer">
-            Watch Part 1
+          <a href="https://www.youtube.com/watch?v=cxZPfj8AlmY" target="_blank" rel="noreferrer">
+            Part 2 is live! Watch Now
             <ExternalLink className="size-4" />
           </a>
         </Button>
