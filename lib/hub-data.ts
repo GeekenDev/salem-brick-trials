@@ -61,7 +61,7 @@ export const TIMELINE: TimelineEntry[] = [
     title: "LEGO Responds",
     description:
       `"Bricks and Minifigs isn't affiliated with the LEGO Group in any ways, which means we aren't able to dictate their action nor have we any control over what they have or will do."`,
-    link: "https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc"
+    link: "https://salembricktrials.com/documents/Item2_ExhibitA_LegoEmail.pdf"
   },
 ]
 
