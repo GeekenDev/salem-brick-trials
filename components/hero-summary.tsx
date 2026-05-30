@@ -2,6 +2,7 @@ import { FolderOpen, ExternalLink, ShieldAlert } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { SITE, SUMMARY } from "@/lib/hub-data"
 import Image from "next/image"
+import Link from "next/link"
 
 export function HeroSummary() {
   return (
@@ -38,9 +39,9 @@ export function HeroSummary() {
             </a>
           </Button>
 
-          {/* <Button asChild size="lg" variant="outline">
-            <a href="#documents">Browse documents below</a>
-          </Button> */}
+          <Button asChild size="lg" variant="outline">
+            <Link href="/bam-timeline">Read the BAM timeline</Link>
+          </Button>
         </div>
       </div>
 

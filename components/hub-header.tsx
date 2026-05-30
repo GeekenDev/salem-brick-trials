@@ -1,10 +1,12 @@
 import { FolderOpen, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { SITE } from "@/lib/hub-data"
+import Link from "next/link"
 
 const NAV = [
   { label: "Summary", href: "#summary" },
   { label: "Timeline", href: "#timeline" },
+  { label: "BAM Timeline", href: "/bam-timeline" },
   // { label: "Documents", href: "#documents" },
   { label: "People", href: "#people" },
   { label: "Contact", href: "#contact" },
@@ -23,13 +25,23 @@ export function HubHeader() {
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Section navigation">
           {NAV.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-            >
-              {item.label}
-            </a>
+            item.href.startsWith("/") ? (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <a
+                key={item.href}
+                href={item.href}
+                className="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              >
+                {item.label}
+              </a>
+            )
           ))}
         </nav>
 
