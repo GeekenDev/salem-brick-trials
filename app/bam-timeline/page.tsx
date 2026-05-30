@@ -59,9 +59,9 @@ export default async function BamTimelinePage() {
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-[minmax(0,1.4fr)_minmax(280px,0.8fr)]">
-            <div className="rounded-2xl border border-border bg-card/80 p-5 shadow-sm backdrop-blur">
+            {/* <div className="rounded-2xl border border-border bg-card/80 p-5 shadow-sm backdrop-blur">
               <p className="text-sm leading-relaxed text-muted-foreground">{intro}</p>
-            </div>
+            </div> */}
 
             <div className="rounded-2xl border border-border bg-secondary/60 p-5">
               <div className="flex items-start gap-3">
