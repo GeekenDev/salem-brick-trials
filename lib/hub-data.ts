@@ -1,0 +1,196 @@
+// ---------------------------------------------------------------------------
+// EDIT THIS FILE to update the hub. All page content is driven from here.
+// Replace placeholder text, add timeline entries, documents, and people.
+// ---------------------------------------------------------------------------
+
+export const SITE = {
+  name: "Salem Brick Trials",
+  title: "Salem Brick Trials",
+  subtitle:
+    "A public, organized record of documents and information regarding the Bricks & Minifigs situation involving Reckless Ben.",
+  // The full Proton Drive folder containing every source document.
+  driveUrl: "https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc",
+  lastUpdated: "May 2026",
+}
+
+export const SUMMARY = {
+  heading: "Background & Summary",
+  paragraphs: [
+    "In November 2023, collector Bryan Mansell consigned a large Star Wars LEGO collection — valued by his family at up to roughly $200,000 — to the Bricks & Minifigs resale store in Keizer, Oregon, which was then operated by franchisees Chrystal and Benjamin Gorman. The arrangement was intended to sell the collection on consignment through the store.",
+    "In November 2024, the franchisor, BAM Franchising, Inc. (Bricks & Minifigs corporate), terminated the Gormans' franchise agreement and took over the Keizer location amid claims of unpaid obligations. Mansell alleges his consigned collection was not returned when the store changed hands. Corporate has stated the consignment was an unauthorized private arrangement that violated franchise policy and that it possesses only a small fraction of the disputed items.",
+    "The dispute drew wider public attention after YouTuber Ben Schneider (Reckless Ben) documented it in a video series. The matter has since become the subject of civil litigation and an active investigation involving Keizer police and the Marion County District Attorney's office. This page collects publicly relevant documentation in one place so reviewers can access primary sources directly.",
+  ],
+  disclaimer:
+    "We and the entire community do not support or condone harassing, attacking, or threatening anyone — including your local Bricks & Minifigs store or their employees. This only does more harm than good.",
+}
+
+export type TimelineEntry = {
+  date: string
+  title: string
+  description: string
+}
+
+export const TIMELINE: TimelineEntry[] = [
+  {
+    date: "November 2023",
+    title: "Star Wars LEGO collection consigned",
+    description:
+      "Bryan Mansell consigns a large Star Wars LEGO collection — valued by his family at up to roughly $200,000 — to the Bricks & Minifigs store in Keizer, Oregon, then operated by franchisees Chrystal and Benjamin Gorman.",
+  },
+  {
+    date: "November 2024",
+    title: "Franchise terminated and store taken over",
+    description:
+      "BAM Franchising, Inc. (Bricks & Minifigs corporate) terminates the Gormans' franchise agreement and takes over the Keizer location amid claims of unpaid obligations.",
+  },
+  {
+    date: "After takeover (late 2024)",
+    title: "Collection not returned",
+    description:
+      "Mansell alleges his consigned collection was not returned when the store changed hands. Corporate maintains the consignment was unauthorized, prohibited by franchise policy, and that it holds only a small fraction of the disputed items.",
+  },
+  {
+    date: "2025",
+    title: "Public attention and investigations",
+    description:
+      "YouTuber Ben Schneider (Reckless Ben) documents the dispute in a video series, drawing wider attention. The matter becomes the subject of civil litigation and an active investigation involving Keizer police and the Marion County District Attorney's office.",
+  },
+]
+
+export type DocItem = {
+  name: string
+  description: string
+  // Link directly to the file if you have a per-file URL, otherwise leave the
+  // main folder link and people can find it inside the Drive.
+  url: string
+  type?: string
+}
+
+export type DocCategory = {
+  category: string
+  items: DocItem[]
+}
+
+const DRIVE = "https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc"
+
+export const DOCUMENTS: DocCategory[] = [
+  {
+    category: "Core Documents",
+    items: [
+      {
+        name: "Document name here",
+        description: "Short description of what this document is.",
+        url: DRIVE,
+        type: "PDF",
+      },
+      {
+        name: "Another document",
+        description: "Short description of what this document is.",
+        url: DRIVE,
+        type: "Document",
+      },
+    ],
+  },
+  {
+    category: "Correspondence & Messages",
+    items: [
+      {
+        name: "Message logs / screenshots",
+        description: "Description of the correspondence included here.",
+        url: DRIVE,
+        type: "Images",
+      },
+    ],
+  },
+  {
+    category: "Financial & Records",
+    items: [
+      {
+        name: "Receipts / records",
+        description: "Description of the records included here.",
+        url: DRIVE,
+        type: "Spreadsheet",
+      },
+    ],
+  },
+]
+
+export type Person = {
+  name: string
+  role: string
+  description: string
+  // Optional photo. Put image files in /public (e.g. "/people/ben.jpg") and
+  // reference the path here. Leave undefined to show initials fallback.
+  image?: string
+}
+
+export const PEOPLE: Person[] = [
+  {
+    name: "Ben Schneider (Reckless Ben)",
+    role: "YouTuber / documenter",
+    description:
+      "Content creator who documented the dispute in a viral video series and publicly pressured Bricks & Minifigs over the consigned collection. His coverage brought wider attention to the situation.",
+    image: "/people/ben.jpg",
+  },
+  {
+    name: "Bryan Mansell",
+    role: "Collection owner / consignor",
+    description:
+      "Owner (along with his father) of the Star Wars LEGO collection, reportedly valued by the family at up to $200,000, that was consigned to the Bricks & Minifigs store in Keizer, Oregon, in 2023.",
+  },
+  {
+    name: "Chrystal Law-Gorman & Benjamin Gorman",
+    role: "Former store owners (Keizer)",
+    description:
+      "Former franchisees who operated the Bricks & Minifigs Keizer location and accepted the consignment. Their franchise agreement was later terminated by corporate.",
+  },
+  {
+    name: "Ammon McNeff",
+    role: "CEO, BAM Franchising, Inc.",
+    description:
+      "Chief executive officer of BAM Franchising, Inc., the parent company of Bricks & Minifigs, since 2018. Corporate maintains the consignment was an unauthorized private deal that violated franchise policy.",
+    image: "/people/ammon.jpg",
+  },
+  {
+    name: "Baker Bricks LLC",
+    role: "Subsequent store operator",
+    description:
+      "Third party identified as acquiring the Keizer store location after the corporate takeover and transition of the franchise.",
+  },
+  {
+    name: "Bricks & Minifigs (BAM Franchising, Inc.)",
+    role: "Business / franchisor",
+    description:
+      "LEGO resale franchise founded in 2009. Corporate terminated the Keizer franchise agreement in 2024 and took over the store; the consigned collection remained on-site, leading to civil litigation and a police investigation.",
+  },
+]
+
+export type LinkItem = {
+  title: string
+  description: string
+  url: string
+  cta: string
+}
+
+export const LINKS: LinkItem[] = [
+  {
+    title: "Help Bryan Recover His Stolen LEGO Collection",
+    description: "Support the GoFundMe campaign to help Bryan recover his LEGO collection.",
+    url: "https://www.gofundme.com/f/help-bryan-recover-his-lego-collection",
+    cta: "Open GoFundMe",
+  },
+  {
+    title: "Support Reckless Ben's Videos and Efforts",
+    description: "Back Reckless Ben on Patreon to support his ongoing videos and efforts.",
+    url: "https://www.patreon.com/RecklessBen",
+    cta: "Open Patreon",
+  },
+]
+
+export const CONTACT = {
+  heading: "Submit Information or Get in Touch",
+  description:
+    "If you have additional documentation, corrections, or context to share, you can reach out using the details below.",
+  // Replace with your real contact email or remove if not needed.
+  email: "contact@salembricktrials.com",
+}
