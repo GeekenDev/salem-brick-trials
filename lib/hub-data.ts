@@ -28,6 +28,7 @@ export type TimelineEntry = {
   date: string
   title: string
   description: string
+  link?: string
 }
 
 export const TIMELINE: TimelineEntry[] = [
@@ -54,6 +55,13 @@ export const TIMELINE: TimelineEntry[] = [
     title: "Public attention and investigations",
     description:
       "YouTuber Ben Schneider (Reckless Ben) documents the dispute in a video series, drawing wider attention. The matter becomes the subject of civil litigation and an active investigation involving Keizer police and the Marion County District Attorney's office.",
+  },
+  {
+    date: "2026",
+    title: "LEGO Responds",
+    description:
+      `"Bricks and Minifigs isn't affiliated with the LEGO Group in any ways, which means we aren't able to dictate their action nor have we any control over what they have or will do."`,
+    link: "https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc"
   },
 ]
 
@@ -184,6 +192,12 @@ export const LINKS: LinkItem[] = [
     description: "Back Reckless Ben on Patreon to support his ongoing videos and efforts.",
     url: "https://www.patreon.com/RecklessBen",
     cta: "Open Patreon",
+  },
+  {
+    title: "Reddit",
+    description: "Come chat and view realtime updates on /r/RecklessBen.",
+    url: "https://www.reddit.com/r/RecklessBen",
+    cta: "Open Reddit",
   },
 ]
 

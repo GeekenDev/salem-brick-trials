@@ -5,7 +5,7 @@ import { SITE } from "@/lib/hub-data"
 const NAV = [
   { label: "Summary", href: "#summary" },
   { label: "Timeline", href: "#timeline" },
-  { label: "Documents", href: "#documents" },
+  // { label: "Documents", href: "#documents" },
   { label: "People", href: "#people" },
   { label: "Contact", href: "#contact" },
 ]
