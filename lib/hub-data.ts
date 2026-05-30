@@ -185,19 +185,19 @@ export const LINKS: LinkItem[] = [
     title: "Help Bryan Recover His Stolen LEGO Collection",
     description: "Support the GoFundMe campaign to help Bryan recover his LEGO collection.",
     url: "https://www.gofundme.com/f/help-bryan-recover-his-lego-collection",
-    cta: "Open GoFundMe",
+    cta: "GoFundMe",
   },
   {
     title: "Support Reckless Ben's Videos and Efforts",
     description: "Back Reckless Ben on Patreon to support his ongoing videos and efforts.",
     url: "https://www.patreon.com/RecklessBen",
-    cta: "Open Patreon",
+    cta: "Patreon",
   },
   {
     title: "Reddit",
     description: "Come chat and view realtime updates on /r/RecklessBen.",
     url: "https://www.reddit.com/r/RecklessBen",
-    cta: "Open Reddit",
+    cta: "Reddit",
   },
 ]
 
