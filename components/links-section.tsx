@@ -1,4 +1,4 @@
-import { ExternalLink, Heart } from "lucide-react"
+import { ExternalLink, Heart, ListIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { LINKS } from "@/lib/hub-data"
 
@@ -19,9 +19,10 @@ export function LinksSection() {
               key={link.url}
               className="flex h-full flex-col gap-4 rounded-lg border border-border bg-card p-6"
             >
-              <span className="flex size-10 items-center justify-center rounded-md bg-secondary text-muted-foreground">
+              {/* <span className="flex size-10 items-center justify-center rounded-md bg-secondary text-muted-foreground">
+                {}
                 <Heart className="size-5" />
-              </span>
+              </span> */}
               <div className="flex-1">
                 <h3 className="font-semibold leading-snug text-balance">{link.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{link.description}</p>

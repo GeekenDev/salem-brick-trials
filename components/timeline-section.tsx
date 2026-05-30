@@ -1,4 +1,5 @@
 import { TIMELINE } from "@/lib/hub-data"
+import Link from "next/link"
 
 export function TimelineSection() {
   return (
@@ -22,6 +23,8 @@ export function TimelineSection() {
                 </span>
                 <h3 className="mt-1 text-base font-semibold tracking-tight">{entry.title}</h3>
                 <p className="mt-1 text-pretty leading-relaxed text-muted-foreground">{entry.description}</p>
+                {entry.link && <p className="mt-1 text-pretty leading-relaxed text-muted-foreground"><Link href={}{entry.link}</p>}
+                 
               </div>
             </li>
           ))}

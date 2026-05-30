@@ -3,14 +3,38 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const _geist = Geist({ subsets: ["latin"] })
+const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: 'Salem Brick Trials',
   description:
-    'A public, organized record of documents and information regarding the Bricks & Minifigs situation involving Recklessben.',
-  generator: 'v0.app',
+    'A public, organized record of documents and information regarding the Bricks & Minifigs situation involving Reckless Ben.',
+
+  openGraph: {
+    title: 'Salem Brick Trials',
+    description:
+      'A public, organized record of documents and information regarding the Bricks & Minifigs situation involving  Reckless Ben.',
+    type: 'website',
+    url: 'https://salembricktrials.com',
+    images: [
+      {
+        url: 'https://img.youtube.com/vi/wscQpkcwgNU/maxresdefault.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Preview image',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Salem Brick Trials',
+    description:
+      'A public, organized record of documents and information regarding the Bricks & Minifigs situation involving  Reckless Ben.',
+    images: ['https://img.youtube.com/vi/wscQpkcwgNU/maxresdefault.jpg'],
+  },
+
   icons: {
     icon: [
       {
@@ -32,9 +56,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en" className="dark bg-background">
       <body className="font-sans antialiased">
