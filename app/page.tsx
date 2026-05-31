@@ -13,7 +13,7 @@ export default function Page() {
       <HubHeader />
       <HeroSummary />
       <TimelineSection />
-      {/* <DocumentsSection /> */}
+      <DocumentsSection />
       <LinksSection />
       <PeopleContact />
 

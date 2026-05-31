@@ -51,6 +51,7 @@ export default async function BamTimelinePage() {
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance md:text-5xl">
               Bricks and Minifgs Side of The Story
             </h1>
+            <h1 className="mt-4 text-xl font-semibold tracking-tight text-balance md:text-2xl" style={{color: "var(--primary)"}}>Credit: <a href="https://reddit.com/u/Professional-Cow5029">u/Professional-Cow5029</a></h1>
             {/* <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
               This page keeps the same chronological structure as the homepage timeline, but breaks
               each date into source-specific bullets so the claims, responses, and video references
