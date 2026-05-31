@@ -16,7 +16,7 @@ import {
 
 const NAV = [
   { label: "Home", href: "/" },
-  { label: "BAM Timeline", href: "/bam-timeline" },
+  { label: "Timeline of Events", href: "/bam-timeline" },
   { label: "Videos", href: "/videos" },
   { label: "People", href: "/people" },
   { label: "Contact", href: "/contact" },
@@ -80,9 +80,6 @@ export function HubHeader() {
                     </span>
                     {SITE.name}
                   </SheetTitle>
-                  <SheetDescription className="text-left">
-                    Quick access to the main sections and video pages.
-                  </SheetDescription>
                 </SheetHeader>
 
                 <div className="flex flex-1 flex-col gap-6 px-6 py-6">
@@ -92,7 +89,7 @@ export function HubHeader() {
                         <SheetClose key={item.href} asChild>
                           <Link
                             href={item.href}
-                            className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+                            className="rounded-lg px-3 py-2 text-lg font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
                           >
                             {item.label}
                           </Link>
