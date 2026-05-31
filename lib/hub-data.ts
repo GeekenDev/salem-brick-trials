@@ -58,7 +58,7 @@ export const TIMELINE: TimelineEntry[] = [
   },
   {
     date: "2026",
-    title: "LEGO Responds",
+    title: "A document (from February 28, 2025) is made public where LEGO Responds",
     description:
       `"Bricks and Minifigs isn't affiliated with the LEGO Group in any ways, which means we aren't able to dictate their action nor have we any control over what they have or will do."`,
     link: "https://salembricktrials.com/documents/Item2_ExhibitA_LegoEmail.pdf"
