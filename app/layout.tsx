@@ -10,12 +10,12 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: 'Salem Brick Trials',
   description:
-    'A public, organized record of documents and information regarding the Bricks & Minifigs situation involving Reckless Ben.',
+    'A public archive of documents and information surrounding the Bricks & Minifigs situation in Reckless Ben’s investigative documentary series.',
 
   openGraph: {
     title: 'Salem Brick Trials',
     description:
-      'A public, organized record of documents and information regarding the Bricks & Minifigs situation involving  Reckless Ben.',
+      'A public archive of documents and information surrounding the Bricks & Minifigs situation in Reckless Ben’s investigative documentary series.',
     type: 'website',
     url: 'https://salembricktrials.com',
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Salem Brick Trials',
     description:
-      'A public, organized record of documents and information regarding the Bricks & Minifigs situation involving  Reckless Ben.',
+      'A public archive of documents and information surrounding the Bricks & Minifigs situation in Reckless Ben’s investigative documentary series.',
     images: ['https://img.youtube.com/vi/wscQpkcwgNU/maxresdefault.jpg'],
   },
 
