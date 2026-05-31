@@ -259,6 +259,24 @@ export const VIDEO_SECTIONS: VideoSection[] = [
         url: "https://www.youtube.com/watch?v=7-0a0i89Llc",
         youtubeId: "7-0a0i89Llc",
         tag: "MoistCr1TiKaL",
+      },
+        {
+        title: "LEGO Scandal Keeps Getting Crazier",
+        date: "May 28, 2026",
+        description:
+          "",
+        url: "https://www.youtube.com/watch?v=oMUHGBaF04E",
+        youtubeId: "oMUHGBaF04E",
+        tag: "MoistCr1TiKaL",
+      },
+      {
+        title: "LEGO Scandal is Getting Extremely Dangerous and Scary",
+        date: "May 30, 2026",
+        description:
+          "Charlie details the escalating situation surrounding Reckless Ben's investigation into a Lego consignment dispute. The account follows the legal challenges encountered while attempting to serve court papers, alongside accounts of recurring interactions with local law enforcement and allegations of systemic interference aimed at suppressing the ongoing inquiry.",
+        url: "https://www.youtube.com/watch?v=EuAhIBpanhQ",
+        youtubeId: "EuAhIBpanhQ",
+        tag: "MoistCr1TiKaL",
       }
     ],
   },
@@ -269,6 +287,20 @@ export const VIDEO_SECTIONS: VideoSection[] = [
   {
     heading: "Interviews",
     videos: [],
+  },
+   {
+    heading: "Press Statements",
+    videos: [
+      {
+        title: "Bricks and Minifigs/Benjamin Schneider Media Release",
+        date: "May 29, 2026",
+        description:
+          "",
+        url: "https://www.youtube.com/watch?v=IcVmSQpIPRY",
+        youtubeId: "IcVmSQpIPRY",
+        tag: "American Fork PD",
+      }
+    ],
   },
 ]
 

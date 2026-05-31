@@ -72,7 +72,7 @@ export default function VideosPage() {
                       )}
                     </div>
 
-                    <div className="flex h-full flex-col gap-5 p-6">
+                    <div className="flex flex-col gap-4 p-5">
                       <div className="flex items-center gap-2">
                         <span className="inline-flex rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">
                           {video.tag}
@@ -91,14 +91,14 @@ export default function VideosPage() {
                         </p>
                       </div>
 
-                      <div className="mt-auto">
+                      {/* <div className="pt-1">
                         <Button asChild className="w-full">
                           <a href={video.url} target="_blank" rel="noreferrer">
                             Open on YouTube
                             <ExternalLink className="size-4" />
                           </a>
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                   </article>
                 ))}
