@@ -240,13 +240,13 @@ export const VIDEO_SECTIONS: VideoSection[] = [
     ],
   },
   {
-    heading: "YouTube Creator Responses",
+    heading: "YouTube Creator Responses & Coverage",
     videos: [
       {
         title: "LEGO Scandal Situation is Actually Crazy",
         date: "May 26, 2026",
         description:
-          "",
+          "Charlie's coverage of Part 1 of Reckless Ben's Series",
         url: "https://www.youtube.com/watch?v=0c60CnipRUY",
         youtubeId: "0c60CnipRUY",
         tag: "MoistCr1TiKaL",
@@ -273,7 +273,7 @@ export const VIDEO_SECTIONS: VideoSection[] = [
         title: "LEGO Scandal is Getting Extremely Dangerous and Scary",
         date: "May 30, 2026",
         description:
-          "Charlie details the escalating situation surrounding Reckless Ben's investigation into a Lego consignment dispute. The account follows the legal challenges encountered while attempting to serve court papers, alongside accounts of recurring interactions with local law enforcement and allegations of systemic interference aimed at suppressing the ongoing inquiry.",
+          "Charlie's coverage of Part 2 of Reckless Ben's Series. Charlie details the escalating situation surrounding Reckless Ben's investigation into a Lego consignment dispute. The account follows the legal challenges encountered while attempting to serve court papers, alongside accounts of recurring interactions with local law enforcement and allegations of systemic interference aimed at suppressing the ongoing inquiry.",
         url: "https://www.youtube.com/watch?v=EuAhIBpanhQ",
         youtubeId: "EuAhIBpanhQ",
         tag: "MoistCr1TiKaL",
@@ -285,8 +285,36 @@ export const VIDEO_SECTIONS: VideoSection[] = [
     videos: [],
   },
   {
-    heading: "Interviews",
-    videos: [],
+    heading: "Interviews & Livestreams",
+    videos: [
+      {
+        title: "Former Bricks & Minifigs Owner goes on ACOB",
+        date: "May 28, 2026",
+        description:
+          "",
+        url: "https://www.youtube.com/live/K-lc6XWV3ms?si=d1qtbzVXLfTqAbti&t=32",
+        youtubeId: "K-lc6XWV3ms",
+        tag: "ACOB",
+      },
+       {
+        title: "Brick's and Minifigs COO goes on ACOB",
+        date: "May 28, 2026",
+        description:
+          "Bricks and Minifigs Corporate COO - Matthew McNeff",
+        url: "https://www.youtube.com/live/K-lc6XWV3ms?si=PKKxN2yLfrx23okB&t=5892",
+        youtubeId: "K-lc6XWV3ms",
+        tag: "ACOB",
+      },
+      {
+        title: "Brick's and Minifigs CEO goes on ACOB",
+        date: "May 28, 2026",
+        description:
+          "Bricks and Minifigs Corporate CEO - Ammon McNeff",
+        url: "https://www.youtube.com/live/9dmR3Flk49k?si=gdRYtChnvkj7WQ5W&t=58",
+        youtubeId: "K-lc6XWV3ms",
+        tag: "ACOB",
+      }
+    ],
   },
    {
     heading: "Press Statements",

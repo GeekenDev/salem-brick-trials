@@ -7,6 +7,44 @@ export const metadata = {
   description: "A curated list of the public videos relating to the investigation.",
 }
 
+function parseTimestamp(value: string | null): number | null {
+  if (!value) return null
+
+  if (/^\d+$/.test(value)) {
+    return Number(value)
+  }
+
+  const match = value.match(/(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s?)?$/i)
+  if (!match) return null
+
+  const hours = Number(match[1] ?? 0)
+  const minutes = Number(match[2] ?? 0)
+  const seconds = Number(match[3] ?? 0)
+
+  const total = hours * 3600 + minutes * 60 + seconds
+  return total > 0 ? total : null
+}
+
+function getEmbedSrc(url: string, youtubeId?: string) {
+  if (!youtubeId) {
+    return null
+  }
+
+  try {
+    const parsed = new URL(url)
+    const timestamp =
+      parseTimestamp(parsed.searchParams.get("t")) ??
+      parseTimestamp(parsed.searchParams.get("start")) ??
+      parseTimestamp(parsed.searchParams.get("time_continue")) ??
+      parseTimestamp(parsed.hash.startsWith("#t=") ? parsed.hash.slice(3) : null)
+
+    const base = `https://www.youtube.com/embed/${youtubeId}`
+    return timestamp ? `${base}?start=${timestamp}` : base
+  } catch {
+    return `https://www.youtube.com/embed/${youtubeId}`
+  }
+}
+
 export default function VideosPage() {
   return (
     <main className="min-h-screen bg-background">
@@ -53,7 +91,7 @@ export default function VideosPage() {
                           <iframe
                             title={video.title}
                             className="h-full w-full"
-                            src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                            src={getEmbedSrc(video.url, video.youtubeId) ?? undefined}
                             loading="lazy"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
