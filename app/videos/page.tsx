@@ -19,10 +19,10 @@ export default function VideosPage() {
               Public video references
             </p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance md:text-5xl">
-              Videos tied to the dispute
+              Video Catalog
             </h1>
             <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-              A categorized list of public videos referenced throughout the site.
+              Comprehensive catalog of videos for you to enjoy.
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function VideosPage() {
               <h2 className="text-2xl font-semibold tracking-tight">{section.heading}</h2>
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                 {section.videos.length > 0
-                  ? "These entries are grouped by source type for quicker scanning."
+                  ? ""
                   : "No entries have been added in this category yet."}
               </p>
             </div>

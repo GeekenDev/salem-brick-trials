@@ -230,7 +230,7 @@ export const VIDEO_SECTIONS: VideoSection[] = [
       },
       {
         title: "Part 2 - Bricks and Minifigs responded to my video",
-        date: "May 23, 2026",
+        date: "May 30, 2026",
         description:
           "Ben attempts to serve legal papers to the owners of Bricks and Minifigs to recover a stolen Star Wars Lego collection. After navigating repeated confrontations with local law enforcement, the effort to secure the collection results in unexpected legal complications.",
         url: "https://www.youtube.com/watch?v=cxZPfj8AlmY",
@@ -241,7 +241,26 @@ export const VIDEO_SECTIONS: VideoSection[] = [
   },
   {
     heading: "YouTube Creator Responses",
-    videos: [],
+    videos: [
+      {
+        title: "LEGO Scandal Situation is Actually Crazy",
+        date: "May 26, 2026",
+        description:
+          "",
+        url: "https://www.youtube.com/watch?v=0c60CnipRUY",
+        youtubeId: "0c60CnipRUY",
+        tag: "MoistCr1TiKaL",
+      },
+      {
+        title: "LEGO Scandal Company Response is Horrible",
+        date: "May 26, 2026",
+        description:
+          "",
+        url: "https://www.youtube.com/watch?v=7-0a0i89Llc",
+        youtubeId: "7-0a0i89Llc",
+        tag: "MoistCr1TiKaL",
+      }
+    ],
   },
   {
     heading: "Police Body Cams",
