@@ -8,9 +8,6 @@ export function LinksSection() {
       <div className="mx-auto max-w-5xl px-6 py-14">
         <div>
           <h2 className="text-2xl font-semibold tracking-tight">Ways to Help</h2>
-          <p className="mt-2 max-w-2xl text-muted-foreground">
-            Support links related to the situation. Each opens in a new tab.
-          </p>
         </div>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">

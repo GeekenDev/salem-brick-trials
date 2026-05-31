@@ -24,13 +24,13 @@ const NAV = [
 
 export function HubHeader() {
   return (
-    <header className="relative z-50 border-b border-border bg-card/95 backdrop-blur md:sticky md:top-0">
+    <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-6 py-4 md:px-5">
-        <Link href="/" className="flex items-center gap-2 font-mono text-sm font-semibold tracking-tight">
-          <span className="flex size-7 items-center justify-center rounded-md bg-primary text-primary-foreground">
+        <Link href="/" className="flex items-center gap-2 font-mono text-base font-semibold tracking-tight sm:text-sm">
+          <span className="hidden size-7 items-center justify-center rounded-md bg-primary text-primary-foreground sm:inline-flex">
             <FolderOpen className="size-4" />
           </span>
-          <span className="hidden sm:inline">{SITE.name}</span>
+          <span>{SITE.name}</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Section navigation">
@@ -106,16 +106,24 @@ export function HubHeader() {
                       ),
                     )}
                   </nav>
-
-                  <div className="mt-auto grid gap-3 border-t border-border pt-6">
+     <div>
+          <h2 className="text-2xl font-semibold tracking-tight">Ways to support</h2>
+          <div className="mt-auto grid gap-3 border-t border-border pt-6">
+              
                     <Button asChild className="w-full">
-                      <a href={SITE.driveUrl} target="_blank" rel="noreferrer">
-                        <FolderOpen className="size-4" />
-                        Open source folder
+                      <a href="https://www.gofundme.com/f/help-bryan-recover-his-lego-collection" target="_blank" rel="noreferrer">
+                        GoFundMe to Support Bryan
+                        <ExternalLink className="size-4" />
+                      </a>
+                    </Button>
+                     <Button asChild className="w-full">
+                      <a href="https://www.patreon.com/RecklessBen" target="_blank" rel="noreferrer">
+                        Support Reckless Ben's Investigations
                         <ExternalLink className="size-4" />
                       </a>
                     </Button>
                   </div>
+        </div>
                 </div>
               </SheetContent>
             </Sheet>
