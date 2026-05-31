@@ -277,6 +277,15 @@ export const VIDEO_SECTIONS: VideoSection[] = [
         url: "https://www.youtube.com/watch?v=EuAhIBpanhQ",
         youtubeId: "EuAhIBpanhQ",
         tag: "MoistCr1TiKaL",
+      },
+      {
+        title: "Attorney Leonard French Weighs In",
+        date: "May 25, 2026",
+        description:
+          "Legal expert Leonard French analyzes the complex property dispute involving a massive Star Wars Lego collection seized by a retail franchise. The discussion examines consignment law, the Uniform Commercial Code, and the potential criminal implications of corporate actions when a family's assets disappear following a store takeover.",
+        url: "https://www.youtube.com/watch?v=14ktgvoH4Mc",
+        youtubeId: "14ktgvoH4Mc",
+        tag: "Lawful Masses",
       }
     ],
   },
