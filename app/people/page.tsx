@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { PEOPLE } from "@/lib/hub-data"
+import { PEOPLE, SUMMARY } from "@/lib/hub-data"
+import { ShieldAlert } from "lucide-react"
 
 export const metadata = {
   title: "People | Salem Brick Trials",
@@ -29,6 +30,13 @@ export default function PeoplePage() {
             The individuals and organizations referenced throughout the documents, summaries, and
             timeline of events.
           </p>
+
+          <div className="mt-8 flex max-w-3xl items-start gap-3 rounded-lg border border-border bg-secondary p-4">
+            <ShieldAlert className="mt-0.5 size-5 shrink-0 text-accent-foreground" />
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {SUMMARY.disclaimer}
+            </p>
+          </div>
         </div>
       </section>
 

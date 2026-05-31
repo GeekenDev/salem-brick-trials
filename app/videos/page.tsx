@@ -22,7 +22,7 @@ export default function VideosPage() {
               Video Catalog
             </h1>
             <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-              Comprehensive catalog of videos for you to enjoy.
+              Community compiled list of videos relevant to the investigation.
             </p>
           </div>
         </div>

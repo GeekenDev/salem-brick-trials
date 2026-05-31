@@ -7,7 +7,7 @@ export const SITE = {
   name: "Salem Brick Trials",
   title: "Salem Brick Trials",
   subtitle:
-    "A public, organized record of documents and information regarding the Bricks & Minifigs situation involving Reckless Ben.",
+    "A public, organized record of documents and information regarding the Bricks & Minifigs situation involving Reckless Ben's Investigative Documentary Series.",
   // The full Proton Drive folder containing every source document.
   driveUrl: "https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc",
   lastUpdated: "May 2026",
@@ -281,7 +281,7 @@ export const VIDEO_SECTIONS: VideoSection[] = [
     ],
   },
   {
-    heading: "Police Body Cams",
+    heading: "Police Body Cam Footage",
     videos: [],
   },
   {

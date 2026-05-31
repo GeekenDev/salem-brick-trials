@@ -15,8 +15,7 @@ import {
 } from "@/components/ui/sheet"
 
 const NAV = [
-  { label: "Summary", href: "/#summary" },
-  { label: "Timeline", href: "/#timeline" },
+  { label: "Home", href: "/" },
   { label: "BAM Timeline", href: "/bam-timeline" },
   { label: "Videos", href: "/videos" },
   { label: "People", href: "/people" },
@@ -25,8 +24,8 @@ const NAV = [
 
 export function HubHeader() {
   return (
-    <header className="border-b border-border bg-card">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-6 py-4">
+    <header className="relative z-50 border-b border-border bg-card/95 backdrop-blur md:sticky md:top-0">
+      <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-6 py-4 md:px-5">
         <Link href="/" className="flex items-center gap-2 font-mono text-sm font-semibold tracking-tight">
           <span className="flex size-7 items-center justify-center rounded-md bg-primary text-primary-foreground">
             <FolderOpen className="size-4" />
