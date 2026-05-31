@@ -1,5 +1,4 @@
-import { ExternalLink, PlayCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { PlayCircle } from "lucide-react"
 import { VIDEO_SECTIONS } from "@/lib/hub-data"
 
 export const metadata = {
@@ -79,11 +78,21 @@ export default function VideosPage() {
             </div>
 
             {section.videos.length > 0 ? (
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div
+                className={
+                  section.heading === "Reckless Ben Documentary Series"
+                    ? "grid gap-6 lg:grid-cols-1"
+                    : "grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+                }
+              >
                 {section.videos.map((video) => (
                   <article
                     key={video.url}
-                    className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm"
+                    className={
+                      section.heading === "Reckless Ben Documentary Series"
+                        ? "grid overflow-hidden rounded-3xl border border-border bg-card shadow-sm lg:grid-cols-[minmax(0,1.3fr)_minmax(320px,0.9fr)]"
+                        : "overflow-hidden rounded-3xl border border-border bg-card shadow-sm"
+                    }
                   >
                     <div className="bg-black">
                       {video.youtubeId ? (
@@ -128,15 +137,6 @@ export default function VideosPage() {
                           {video.description}
                         </p>
                       </div>
-
-                      {/* <div className="pt-1">
-                        <Button asChild className="w-full">
-                          <a href={video.url} target="_blank" rel="noreferrer">
-                            Open on YouTube
-                            <ExternalLink className="size-4" />
-                          </a>
-                        </Button>
-                      </div> */}
                     </div>
                   </article>
                 ))}

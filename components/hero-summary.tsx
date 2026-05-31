@@ -17,7 +17,8 @@ export function HeroSummary() {
           priority
           className="object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-background/30" />
+        <div className="absolute inset-0 bg-background/25" />
+        <div className="absolute inset-0 bg-black/55" />
       </div>
 
       {/* Content MUST be above background */}
