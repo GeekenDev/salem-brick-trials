@@ -19,9 +19,8 @@ const NAV = [
   { label: "Timeline", href: "/#timeline" },
   { label: "BAM Timeline", href: "/bam-timeline" },
   { label: "Videos", href: "/videos" },
-  // { label: "Documents", href: "#documents" },
-  { label: "People", href: "/#people" },
-  { label: "Contact", href: "/#contact" },
+  { label: "People", href: "/people" },
+  { label: "Contact", href: "/contact" },
 ]
 
 export function HubHeader() {
@@ -60,8 +59,8 @@ export function HubHeader() {
         <div className="flex items-center gap-2">
           <div className="hidden sm:block">
             <Button asChild size="sm">
-              <a href={SITE.driveUrl} target="_blank" rel="noreferrer">
-                Open source folder
+              <a href="https://www.youtube.com/watch?v=cxZPfj8AlmY" target="_blank" rel="noreferrer">
+                Part 2 is live! Watch Now
                 <ExternalLink className="size-4" />
               </a>
             </Button>

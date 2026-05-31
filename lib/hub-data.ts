@@ -210,24 +210,46 @@ export type VideoItem = {
   tag: string
 }
 
-export const VIDEOS: VideoItem[] = [
+export type VideoSection = {
+  heading: string
+  videos: VideoItem[]
+}
+
+export const VIDEO_SECTIONS: VideoSection[] = [
   {
-    title: "Part 1 - I tracked down the thief who stole $200,000 of LEGO",
-    date: "May 21, 2026",
-    description:
-      "The main Reckless Ben video referenced throughout the site. The homepage hero uses this clip's thumbnail image, and the BAM timeline cites multiple segments from it.",
-    url: "https://www.youtube.com/watch?v=wscQpkcwgNU",
-    youtubeId: "wscQpkcwgNU",
-    tag: "Primary video",
+    heading: "Reckless Ben Documentary Series",
+    videos: [
+      {
+        title: "Part 1 - I tracked down the thief who stole $200,000 of LEGO",
+        date: "May 21, 2026",
+        description:
+          "Ben investigates a massive Lego Star Wars collection theft linked to a corporate toy store chain. After the original owners were forced out of their business, the collection remained under dispute, prompting a quest to confront the company and its representatives to recover the lost property.",
+        url: "https://www.youtube.com/watch?v=wscQpkcwgNU",
+        youtubeId: "wscQpkcwgNU",
+        tag: "Primary video",
+      },
+      {
+        title: "Part 2 - Bricks and Minifigs responded to my video",
+        date: "May 23, 2026",
+        description:
+          "Ben attempts to serve legal papers to the owners of Bricks and Minifigs to recover a stolen Star Wars Lego collection. After navigating repeated confrontations with local law enforcement, the effort to secure the collection results in unexpected legal complications.",
+        url: "https://www.youtube.com/watch?v=cxZPfj8AlmY",
+        youtubeId: "cxZPfj8AlmY",
+        tag: "Primary video",
+      },
+    ],
   },
   {
-    title: "Part 2 - Bricks and Minifigs responded to my video",
-    date: "May 23, 2026",
-    description:
-      "Reckless Ben's response video after BAM posted its public statement. The BAM timeline cites this upload as part of the continuing dispute.",
-    url: "https://www.youtube.com/watch?v=cxZPfj8AlmY",
-    youtubeId: "cxZPfj8AlmY",
-    tag: "Primary Video",
+    heading: "YouTube Creator Responses",
+    videos: [],
+  },
+  {
+    heading: "Police Body Cams",
+    videos: [],
+  },
+  {
+    heading: "Interviews",
+    videos: [],
   },
 ]
 

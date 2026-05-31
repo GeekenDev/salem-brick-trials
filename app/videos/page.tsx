@@ -1,6 +1,6 @@
 import { ExternalLink, PlayCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { VIDEOS } from "@/lib/hub-data"
+import { VIDEO_SECTIONS } from "@/lib/hub-data"
 
 export const metadata = {
   title: "Videos | Salem Brick Trials",
@@ -22,77 +22,94 @@ export default function VideosPage() {
               Videos tied to the dispute
             </h1>
             <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-              Additional videos will be added shortly. I'm gathering a list and categorizing them so that they'll be organized and easily accessible.
+              A categorized list of public videos referenced throughout the site.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-14">
-        <div className="grid gap-6">
-          {VIDEOS.map((video) => (
-            <article
-              key={video.url}
-              className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm"
-            >
-              <div className="grid gap-0 lg:grid-cols-[minmax(0,1.2fr)_minmax(320px,0.8fr)]">
-                <div className="border-b border-border bg-black lg:border-b-0 lg:border-r">
-                  {video.youtubeId ? (
-                    <div className="aspect-video">
-                      <iframe
-                        title={video.title}
-                        className="h-full w-full"
-                        src={`https://www.youtube.com/embed/${video.youtubeId}`}
-                        loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      />
+      <section className="mx-auto max-w-6xl space-y-12 px-6 py-14">
+        {VIDEO_SECTIONS.map((section) => (
+          <div key={section.heading} className="space-y-5">
+            <div>
+              <h2 className="text-2xl font-semibold tracking-tight">{section.heading}</h2>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                {section.videos.length > 0
+                  ? "These entries are grouped by source type for quicker scanning."
+                  : "No entries have been added in this category yet."}
+              </p>
+            </div>
+
+            {section.videos.length > 0 ? (
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {section.videos.map((video) => (
+                  <article
+                    key={video.url}
+                    className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm"
+                  >
+                    <div className="bg-black">
+                      {video.youtubeId ? (
+                        <div className="aspect-video">
+                          <iframe
+                            title={video.title}
+                            className="h-full w-full"
+                            src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                          />
+                        </div>
+                      ) : (
+                        <div className="flex aspect-video items-center justify-center bg-[linear-gradient(135deg,oklch(0.2_0.01_285),oklch(0.32_0.03_285),oklch(0.18_0.01_285))] p-8 text-center">
+                          <div className="max-w-sm">
+                            <PlayCircle className="mx-auto size-14 text-primary" />
+                            <p className="mt-4 text-sm leading-relaxed text-zinc-200">
+                              This reference is cited in the BAM timeline but is linked here as a YouTube
+                              search because the exact upload ID is not listed in the local source material.
+                            </p>
+                          </div>
+                        </div>
+                      )}
                     </div>
-                  ) : (
-                    <div className="flex aspect-video items-center justify-center bg-[linear-gradient(135deg,oklch(0.2_0.01_285),oklch(0.32_0.03_285),oklch(0.18_0.01_285))] p-8 text-center">
-                      <div className="max-w-sm">
-                        <PlayCircle className="mx-auto size-14 text-primary" />
-                        <p className="mt-4 text-sm leading-relaxed text-zinc-200">
-                          This reference is cited in the BAM timeline but is linked here as a YouTube search
-                          because the exact upload ID is not listed in the local source material.
+
+                    <div className="flex h-full flex-col gap-5 p-6">
+                      <div className="flex items-center gap-2">
+                        <span className="inline-flex rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">
+                          {video.tag}
+                        </span>
+                        <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                          {video.date}
+                        </span>
+                      </div>
+
+                      <div>
+                        <h3 className="text-xl font-semibold tracking-tight text-balance">
+                          {video.title}
+                        </h3>
+                        <p className="mt-3 text-pretty text-sm leading-relaxed text-muted-foreground">
+                          {video.description}
                         </p>
                       </div>
+
+                      <div className="mt-auto">
+                        <Button asChild className="w-full">
+                          <a href={video.url} target="_blank" rel="noreferrer">
+                            Open on YouTube
+                            <ExternalLink className="size-4" />
+                          </a>
+                        </Button>
+                      </div>
                     </div>
-                  )}
-                </div>
-
-                <div className="flex flex-col gap-5 p-6 sm:p-7">
-                  <div className="flex items-center gap-2">
-                    <span className="inline-flex rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">
-                      {video.tag}
-                    </span>
-                    <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                      {video.date}
-                    </span>
-                  </div>
-
-                  <div>
-                    <h2 className="text-2xl font-semibold tracking-tight text-balance">
-                      {video.title}
-                    </h2>
-                    <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
-                      {video.description}
-                    </p>
-                  </div>
-
-                  <div className="mt-auto">
-                    <Button asChild className="w-full sm:w-fit">
-                      <a href={video.url} target="_blank" rel="noreferrer">
-                        Open on YouTube
-                        <ExternalLink className="size-4" />
-                      </a>
-                    </Button>
-                  </div>
-                </div>
+                  </article>
+                ))}
               </div>
-            </article>
-          ))}
-        </div>
+            ) : (
+              <div className="rounded-2xl border border-dashed border-border bg-card/60 p-6 text-sm text-muted-foreground">
+                This category is reserved for future additions.
+              </div>
+            )}
+          </div>
+        ))}
       </section>
     </main>
   )
