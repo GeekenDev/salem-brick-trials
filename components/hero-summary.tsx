@@ -29,26 +29,8 @@ export function HeroSummary() {
         <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
           {SITE.subtitle}
         </p>
-
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <Button asChild size="lg">
-            <a href={SITE.driveUrl} target="_blank" rel="noreferrer">
-              <FolderOpen className="size-4" />
-              Open the full document folder
-              <ExternalLink className="size-4" />
-            </a>
-          </Button>
-
-          <Button asChild size="lg" variant="outline">
-            <Link href="/bam-timeline">Read the BAM timeline</Link>
-          </Button>
-        </div>
-      </div>
-
-      {/* Summary stays normal flow */}
-      <div id="summary" className="relative z-10 border-t border-border">
-        <div className="mx-auto max-w-5xl px-6 py-14">
-          <h2 className="text-2xl font-semibold tracking-tight">{SUMMARY.heading}</h2>
+        
+  <h2 className="text-2xl font-semibold tracking-tight mt-4">{SUMMARY.heading}</h2>
 
           <div className="mt-5 max-w-3xl space-y-4">
             {SUMMARY.paragraphs.map((p, i) => (
@@ -64,8 +46,23 @@ export function HeroSummary() {
               {SUMMARY.disclaimer}
             </p>
           </div>
-        </div>
+        {/* <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <Button asChild size="lg">
+            <a href={SITE.driveUrl} target="_blank" rel="noreferrer">
+              <FolderOpen className="size-4" />
+              Open the full document folder
+              <ExternalLink className="size-4" />
+            </a>
+          </Button>
+
+          <Button asChild size="lg" variant="outline">
+            <Link href="/bam-timeline">Read the BAM timeline</Link>
+          </Button>
+        </div> */}
       </div>
+
+      {/* Summary stays normal flow */}
+      
     </section>
   )
 }

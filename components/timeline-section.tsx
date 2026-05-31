@@ -5,9 +5,9 @@ export function TimelineSection() {
   return (
     <section id="timeline" className="border-b border-border">
       <div className="mx-auto max-w-5xl px-6 py-14">
-        <h2 className="text-2xl font-semibold tracking-tight">Timeline of Events</h2>
+        <h2 className="text-2xl font-semibold tracking-tight">Summarized Timeline</h2>
         <p className="mt-2 max-w-2xl text-muted-foreground">
-          A chronological record of key developments. Refer to the documents section for source material.
+          To view a more comprehensive timeline <a href="/bam-timeline">click here</a>.
         </p>
 
         <ol className="mt-8 max-w-3xl">
