@@ -201,6 +201,36 @@ export const LINKS: LinkItem[] = [
   },
 ]
 
+export type VideoItem = {
+  title: string
+  description: string
+  date: string
+  url: string
+  youtubeId?: string
+  tag: string
+}
+
+export const VIDEOS: VideoItem[] = [
+  {
+    title: "Part 1 - I tracked down the thief who stole $200,000 of LEGO",
+    date: "May 21, 2026",
+    description:
+      "The main Reckless Ben video referenced throughout the site. The homepage hero uses this clip's thumbnail image, and the BAM timeline cites multiple segments from it.",
+    url: "https://www.youtube.com/watch?v=wscQpkcwgNU",
+    youtubeId: "wscQpkcwgNU",
+    tag: "Primary video",
+  },
+  {
+    title: "Part 2 - Bricks and Minifigs responded to my video",
+    date: "May 23, 2026",
+    description:
+      "Reckless Ben's response video after BAM posted its public statement. The BAM timeline cites this upload as part of the continuing dispute.",
+    url: "https://www.youtube.com/watch?v=cxZPfj8AlmY",
+    youtubeId: "cxZPfj8AlmY",
+    tag: "Primary Video",
+  },
+]
+
 export const CONTACT = {
   heading: "Submit Information or Get in Touch",
   description:

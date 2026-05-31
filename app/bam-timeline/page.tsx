@@ -1,8 +1,4 @@
-import { ArrowLeft, BookOpen, ExternalLink, ShieldAlert } from "lucide-react"
-import Link from "next/link"
-
-import { Button } from "@/components/ui/button"
-import { SITE } from "@/lib/hub-data"
+import { ShieldAlert } from "lucide-react"
 import { getBamTimelineData } from "@/lib/bam-timeline"
 
 export const metadata = {
@@ -19,7 +15,7 @@ const toneClasses: Record<string, string> = {
 }
 
 export default async function BamTimelinePage() {
-  const { intro, entries } = await getBamTimelineData()
+  const { entries } = await getBamTimelineData()
 
   return (
     <main className="min-h-screen bg-background">
@@ -27,23 +23,6 @@ export default async function BamTimelinePage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,oklch(0.96_0.02_27.3/0.45),transparent_35%),radial-gradient(circle_at_bottom_left,oklch(0.54_0.21_27.3/0.12),transparent_30%)]" />
 
         <div className="relative mx-auto max-w-6xl px-6 py-6">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <Button asChild variant="outline" size="sm" className="w-fit">
-              <Link href="/">
-                <ArrowLeft className="size-4" />
-                Back home
-              </Link>
-            </Button>
-
-            <Button asChild size="sm" className="w-fit">
-              <a href={SITE.driveUrl} target="_blank" rel="noreferrer">
-                <BookOpen className="size-4" />
-                Open source folder
-                <ExternalLink className="size-4" />
-              </a>
-            </Button>
-          </div>
-
           <div className="mt-12 max-w-3xl">
             <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
               Based on BAM's Legal Filings

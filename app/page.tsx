@@ -1,7 +1,5 @@
-import { HubHeader } from "@/components/hub-header"
 import { HeroSummary } from "@/components/hero-summary"
 import { TimelineSection } from "@/components/timeline-section"
-import { DocumentsSection } from "@/components/documents-section"
 import { LinksSection } from "@/components/links-section"
 import { PeopleContact } from "@/components/people-contact"
 import { SITE } from "@/lib/hub-data"
@@ -10,7 +8,6 @@ import Link from "next/link"
 export default function Page() {
   return (
     <main className="min-h-screen bg-background">
-      <HubHeader />
       <HeroSummary />
       <TimelineSection />
       {/* <DocumentsSection /> */}

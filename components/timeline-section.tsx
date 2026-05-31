@@ -1,5 +1,4 @@
 import { TIMELINE } from "@/lib/hub-data"
-import { Underline } from "lucide-react"
 import Link from "next/link"
 
 export function TimelineSection() {
