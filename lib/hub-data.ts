@@ -159,7 +159,7 @@ export const DOCUMENTS: DocCategory[] = [
     category: "Warrants",
     items: [
       {
-        entity: "AFFIDAVIT FOR SEARCH WARRANT",
+        entity: "AFFIDAVIT FOR & COPY OF SEARCH WARRANT",
         title: "A copy of the affidavit and search warrant that led to the SWAT team storming and searching Reckless Ben's AirBNB. This incident also led to the arrest of Ben and his team.",
         date: "March 11, 2026",
         description: "",
