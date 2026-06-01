@@ -195,7 +195,7 @@ export const PEOPLE: Person[] = [
   },
   {
     name: "Chrystal Law-Gorman & Benjamin Gorman",
-    role: "Former store owners (Keizer)",
+    role: "Former store owners (SALEM)",
     description:
       "Former franchisees who operated the Bricks & Minifigs Keizer location and accepted the consignment. Their franchise agreement was later terminated by corporate.",
   },
