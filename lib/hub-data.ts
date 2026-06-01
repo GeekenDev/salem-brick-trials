@@ -293,7 +293,7 @@ export const VIDEO_SECTIONS: VideoSection[] = [
         title: "Response to PR Statement",
         date: "May 23, 2026",
         description:
-          "Ben analyzes a public statement issued by Bricks and Minifigs regarding a consignment dispute at their former Salem location. By examining the official response against documented evidence and past interactions, this breakdown evaluates the company's claims and the ongoing conflict over inventory ownership.",
+          "Ben discusses a public statement issued by Bricks and Minifigs regarding a consignment dispute at their former Salem location. By examining the official response against documented evidence and past interactions, this breakdown evaluates the company's claims and the ongoing conflict over inventory ownership.",
         url: "https://www.youtube.com/watch?v=bWg2bnAqW6k",
         youtubeId: "bWg2bnAqW6k",
         tag: "Reckless Ben",
@@ -302,7 +302,7 @@ export const VIDEO_SECTIONS: VideoSection[] = [
         title: "Response to Leaked BAM Franchise Email",
         date: "May 28, 2026",
         description:
-          "Ben analyzes a leaked corporate document detailing how a franchise network plans to manage public fallout and legal strategy following a documentary release. The footage outlines recommended internal communication guidelines, crisis management tactics, and the company's intended response to ongoing online criticism regarding a consignment dispute.",
+          "Ben reviews a leaked corporate document detailing how a franchise network plans to manage public fallout and legal strategy following a documentary release. The footage outlines recommended internal communication guidelines, crisis management tactics, and the company's intended response to ongoing online criticism regarding a consignment dispute.",
         url: "https://www.youtube.com/watch?v=nny2ojTqW3A",
         youtubeId: "nny2ojTqW3A",
         tag: "Reckless Ben",
