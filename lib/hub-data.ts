@@ -287,6 +287,38 @@ export const VIDEO_SECTIONS: VideoSection[] = [
     ],
   },
   {
+    heading: "Reckless Ben Segments",
+    videos: [
+      {
+        title: "Response to PR Statement",
+        date: "May 23, 2026",
+        description:
+          "Ben analyzes a public statement issued by Bricks and Minifigs regarding a consignment dispute at their former Salem location. By examining the official response against documented evidence and past interactions, this breakdown evaluates the company's claims and the ongoing conflict over inventory ownership.",
+        url: "https://www.youtube.com/watch?v=bWg2bnAqW6k",
+        youtubeId: "bWg2bnAqW6k",
+        tag: "Reckless Ben",
+      },
+       {
+        title: "Response to Leaked BAM Franchise Email",
+        date: "May 28, 2026",
+        description:
+          "Ben analyzes a leaked corporate document detailing how a franchise network plans to manage public fallout and legal strategy following a documentary release. The footage outlines recommended internal communication guidelines, crisis management tactics, and the company's intended response to ongoing online criticism regarding a consignment dispute.",
+        url: "https://www.youtube.com/watch?v=nny2ojTqW3A",
+        youtubeId: "nny2ojTqW3A",
+        tag: "Reckless Ben",
+      },
+      {
+        title: "Reckless Ben - H3 Podcast Appearance",
+        date: "May 29, 2026",
+        description:
+          "Ben appears on the H3 Podcast to discuss his investigation.",
+        url: "https://www.youtube.com/live/IdII08PDlUE?si=ku5ChxTtqP5tlBS4&t=3859",
+        youtubeId: "IdII08PDlUE",
+        tag: "H3 Podcast",
+      },
+    ],
+  },
+  {
     heading: "YouTube Creator Responses & Coverage",
     videos: [
       {
@@ -366,8 +398,8 @@ export const VIDEO_SECTIONS: VideoSection[] = [
         date: "May 28, 2026",
         description:
           "Bricks and Minifigs Corporate CEO - Ammon McNeff",
-        url: "https://www.youtube.com/live/9dmR3Flk49k?si=gdRYtChnvkj7WQ5W&t=58",
-        youtubeId: "K-lc6XWV3ms",
+        url: "https://www.youtube.com/live/9dmR3Flk49k?si=n1yOHr17PzZr_2jD&t=59",
+        youtubeId: "9dmR3Flk49k",
         tag: "ACOB",
       }
     ],
