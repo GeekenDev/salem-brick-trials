@@ -41,14 +41,18 @@ export function DocumentsSection() {
                       </span>
                       <span className="min-w-0 flex-1">
                         <span className="flex items-center gap-2">
-                          <span className="truncate font-medium">{item.name}</span>
+                          <span className="font-medium">{item.entity}</span>
                           {item.type && (
                             <span className="shrink-0 rounded border border-border px-1.5 py-0.5 text-[10px] font-medium uppercase text-muted-foreground">
                               {item.type}
                             </span>
                           )}
                         </span>
-                        <span className="mt-0.5 block text-sm leading-relaxed text-muted-foreground">
+                        <span className="mt-1 block text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                          {item.date}
+                        </span>
+                        <span className="mt-2 block text-sm text-muted-foreground">{item.title}</span>
+                        <span className="mt-1 block text-sm leading-relaxed text-muted-foreground">
                           {item.description}
                         </span>
                       </span>

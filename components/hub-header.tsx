@@ -16,6 +16,7 @@ import {
 
 const NAV = [
   { label: "Home", href: "/" },
+  { label: "Documents", href: "/documents" },
   { label: "Timeline of Events", href: "/bam-timeline" },
   { label: "Videos", href: "/videos" },
   { label: "People", href: "/people" },
@@ -98,7 +99,7 @@ export function HubHeader() {
                         <SheetClose key={item.href} asChild>
                           <a
                             href={item.href}
-                            className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+                            className="rounded-lg px-3 py-2 text-lg font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
                           >
                             {item.label}
                           </a>
@@ -106,24 +107,15 @@ export function HubHeader() {
                       ),
                     )}
                   </nav>
-     <div>
-          <h2 className="text-2xl font-semibold tracking-tight">Ways to support</h2>
-          <div className="mt-auto grid gap-3 border-t border-border pt-6">
-              
+
+                  <div className="mt-auto grid gap-3 border-t border-border pt-6">
                     <Button asChild className="w-full">
-                      <a href="https://www.gofundme.com/f/help-bryan-recover-his-lego-collection" target="_blank" rel="noreferrer">
-                        GoFundMe to Support Bryan
-                        <ExternalLink className="size-4" />
-                      </a>
-                    </Button>
-                     <Button asChild className="w-full">
-                      <a href="https://www.patreon.com/RecklessBen" target="_blank" rel="noreferrer">
-                        Support Reckless Ben's Investigations
+                      <a href={SITE.driveUrl} target="_blank" rel="noreferrer">
+                        Open source folder
                         <ExternalLink className="size-4" />
                       </a>
                     </Button>
                   </div>
-        </div>
                 </div>
               </SheetContent>
             </Sheet>

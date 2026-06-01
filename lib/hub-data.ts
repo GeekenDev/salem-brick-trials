@@ -66,7 +66,9 @@ export const TIMELINE: TimelineEntry[] = [
 ]
 
 export type DocItem = {
-  name: string
+  entity: string
+  title: string
+  date: string
   description: string
   // Link directly to the file if you have a per-file URL, otherwise leave the
   // main folder link and people can find it inside the Drive.
@@ -82,42 +84,66 @@ export type DocCategory = {
 const DRIVE = "https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc"
 
 export const DOCUMENTS: DocCategory[] = [
+  // {
+  //   category: "American Fork Police Incident Reports",
+  //   items: [
+  //     {
+  //       entity: "American Fork Police Department",
+  //       title: "Document name here",
+  //       date: "May 2026",
+  //       description: "Short description of what this document is.",
+  //       url: DRIVE,
+  //       type: "PDF",
+  //     },
+  //     {
+  //       entity: "American Fork Police Department",
+  //       title: "Another document",
+  //       date: "May 2026",
+  //       description: "Short description of what this document is.",
+  //       url: DRIVE,
+  //       type: "Document",
+  //     },
+  //   ],
+  // },
   {
-    category: "Core Documents",
+    category: "Court Cases",
     items: [
       {
-        name: "Document name here",
-        description: "Short description of what this document is.",
-        url: DRIVE,
-        type: "PDF",
+        entity: "Law, Gorman v. BAM Corporate",
+        title: "",
+        date: "May 2026",
+        description: "The Brick's and Minifigs store owners who consigned Bryan's LEGO set file a lawsuit against Bricks's and Minfigs Corporate, who took over their store.",
+        url: "https://drive.google.com/drive/folders/1_sAi_zCG74ha9Dx7c6BG2mSglbZeFKR4?usp=drive_link",
+        type: "",
       },
       {
-        name: "Another document",
-        description: "Short description of what this document is.",
-        url: DRIVE,
-        type: "Document",
+        entity: "BAM Corporate v. Ben Schneider (Reckles Ben), Bryan Mansell ",
+        title: "",
+        date: "May 2026",
+        description: "BAM Franchising (Bricks and Minifigs) sue YouTuber Ben Schneider (Reckless Ben), Bryan Mansell, and others, accusing them of coordinating a harassment and extortion campaign against the company and its franchise owners in connection with a disputed $200,000+ Star Wars LEGO collection that the Mansells consigned to an Oregon store.",
+        url: "https://drive.google.com/drive/folders/1v6BdA0v6fzpLgS773_EXkVJ1XmlD2kqy?usp=drive_link",
+        type: "",
       },
     ],
   },
   {
-    category: "Correspondence & Messages",
+    category: "Written PR & Press Statements",
     items: [
       {
-        name: "Message logs / screenshots",
-        description: "Description of the correspondence included here.",
-        url: DRIVE,
-        type: "Images",
+        entity: "Bricks & Minifigs Corporate",
+        title: "A Note to Our Community about the Bricks & Minifigs® Salem, OR Store",
+        date: "May 21, 2026",
+        description: "",
+        url: "https://bricksandminifigs.com/blog/blog/2026/05/21/salem-oregon-bricks-and-minifigs-store-situation/",
+        type: "Blog Post",
       },
-    ],
-  },
-  {
-    category: "Financial & Records",
-    items: [
       {
-        name: "Receipts / records",
-        description: "Description of the records included here.",
-        url: DRIVE,
-        type: "Spreadsheet",
+        entity: "Bricks & Minifigs Corporate",
+        title: "Response to Customer Inquiries Regarding Bricks & Minifigs Salem, Oregon: Clarity and Resolution of an Isolated and Former Franchisee’s Private Civil Dispute",
+        date: "May 28, 2026",
+        description: "",
+        url: "https://bricksandminifigs.com/blog/blog/2026/05/28/bricks-minifigs-salem-oregon-clarity-and-resolution/",
+        type: "Blog Post",
       },
     ],
   },
