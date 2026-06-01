@@ -49,36 +49,45 @@ export default function DocumentsPage() {
               )}
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4">
               {category.items.map((item) => (
                 <a
                   key={`${item.entity}-${item.title}-${item.date}`}
                   href={item.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="group flex h-full items-start gap-3 rounded-2xl border border-border bg-card p-5 transition-colors hover:border-primary/50 hover:bg-accent"
+                  className="group overflow-hidden rounded-3xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md"
                 >
-                  <span className="flex size-10 shrink-0 items-center justify-center rounded-md bg-secondary text-muted-foreground group-hover:bg-primary group-hover:text-primary-foreground">
-                    <FileText className="size-4" />
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="flex flex-wrap items-center gap-2">
-                      <span className="font-medium">{item.entity}</span>
-                      {item.type && (
-                        <span className="shrink-0 rounded border border-border px-1.5 py-0.5 text-[10px] font-medium uppercase text-muted-foreground">
-                          {item.type}
-                        </span>
-                      )}
+                  <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-md bg-secondary text-muted-foreground transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                      <FileText className="size-4" />
                     </span>
-                    <span className="mt-1 block text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                      {item.date}
-                    </span>
-                    <span className="mt-2 block text-sm text-muted-foreground">{item.title}</span>
-                    <span className="mt-2 block text-sm leading-relaxed text-muted-foreground">
-                      {item.description}
-                    </span>
-                  </span>
-                  <ExternalLink className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="font-medium text-foreground">{item.entity}</span>
+                        {item.type && (
+                          <span className="shrink-0 rounded border border-border px-1.5 py-0.5 text-[10px] font-medium uppercase text-muted-foreground">
+                            {item.type}
+                          </span>
+                        )}
+                      </div>
+
+                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                        {item.date}
+                      </p>
+
+                      <h3 className="mt-2 text-lg font-semibold tracking-tight text-balance">
+                        {item.title}
+                      </h3>
+
+                      <p className="mt-2 max-w-4xl text-sm leading-relaxed text-muted-foreground">
+                        {item.description}
+                      </p>
+                    </div>
+
+                    <ExternalLink className="mt-1 size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-foreground" />
+                  </div>
                 </a>
               ))}
             </div>

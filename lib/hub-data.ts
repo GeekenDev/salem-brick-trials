@@ -114,7 +114,7 @@ export const DOCUMENTS: DocCategory[] = [
         date: "March 27, 2026",
         description: "The Brick's and Minifigs store owners who consigned Bryan's LEGO set file a lawsuit against Bricks's and Minfigs Corporate, who took over their store.",
         url: "https://drive.google.com/drive/folders/1_sAi_zCG74ha9Dx7c6BG2mSglbZeFKR4?usp=drive_link",
-        type: "",
+        type: "Folder",
       },
       {
         entity: "BAM Corporate v. Ben Schneider (Reckles Ben), Bryan Mansell ",
@@ -122,7 +122,7 @@ export const DOCUMENTS: DocCategory[] = [
         date: "May 27, 2026",
         description: "BAM Franchising (Bricks and Minifigs) sue YouTuber Ben Schneider (Reckless Ben), Bryan Mansell, and others, accusing them of coordinating a harassment and extortion campaign against the company and its franchise owners in connection with a disputed $200,000+ Star Wars LEGO collection that the Mansells consigned to an Oregon store.",
         url: "https://drive.google.com/drive/folders/1v6BdA0v6fzpLgS773_EXkVJ1XmlD2kqy?usp=drive_link",
-        type: "",
+        type: "Folder",
       },
     ],
   },
@@ -145,6 +145,14 @@ export const DOCUMENTS: DocCategory[] = [
         url: "https://bricksandminifigs.com/blog/blog/2026/05/28/bricks-minifigs-salem-oregon-clarity-and-resolution/",
         type: "Blog Post",
       },
+      {
+          entity: "Bricks & Minifigs Corporate",
+        title: "Leaked Internal Email to Franchisees",
+        date: "",
+        description: "",
+        url: "https://drive.google.com/file/d/1FjGBKiH6GpP1E1DZgE8Av5emv98yJf4B/view?usp=drive_link",
+        type: "PDF",
+      }
     ],
   },
   {
