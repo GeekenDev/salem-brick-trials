@@ -40,12 +40,12 @@ export default function ContactPage() {
                   {CONTACT.email}
                 </a>
               </Button>
-              <Button asChild variant="outline">
+              {/* <Button asChild variant="outline">
                 <a href={SITE.driveUrl} target="_blank" rel="noreferrer">
                   <FolderOpen className="size-4" />
                   Open document folder
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

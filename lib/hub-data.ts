@@ -111,7 +111,7 @@ export const DOCUMENTS: DocCategory[] = [
       {
         entity: "Law, Gorman v. BAM Corporate",
         title: "",
-        date: "May 2026",
+        date: "March 27, 2026",
         description: "The Brick's and Minifigs store owners who consigned Bryan's LEGO set file a lawsuit against Bricks's and Minfigs Corporate, who took over their store.",
         url: "https://drive.google.com/drive/folders/1_sAi_zCG74ha9Dx7c6BG2mSglbZeFKR4?usp=drive_link",
         type: "",
@@ -119,7 +119,7 @@ export const DOCUMENTS: DocCategory[] = [
       {
         entity: "BAM Corporate v. Ben Schneider (Reckles Ben), Bryan Mansell ",
         title: "",
-        date: "May 2026",
+        date: "May 27, 2026",
         description: "BAM Franchising (Bricks and Minifigs) sue YouTuber Ben Schneider (Reckless Ben), Bryan Mansell, and others, accusing them of coordinating a harassment and extortion campaign against the company and its franchise owners in connection with a disputed $200,000+ Star Wars LEGO collection that the Mansells consigned to an Oregon store.",
         url: "https://drive.google.com/drive/folders/1v6BdA0v6fzpLgS773_EXkVJ1XmlD2kqy?usp=drive_link",
         type: "",
@@ -144,6 +144,19 @@ export const DOCUMENTS: DocCategory[] = [
         description: "",
         url: "https://bricksandminifigs.com/blog/blog/2026/05/28/bricks-minifigs-salem-oregon-clarity-and-resolution/",
         type: "Blog Post",
+      },
+    ],
+  },
+  {
+    category: "Warrants",
+    items: [
+      {
+        entity: "AFFIDAVIT FOR SEARCH WARRANT",
+        title: "A copy of the affidavit and search warrant that led to the SWAT team storming and searching Reckless Ben's AirBNB. This incident also led to the arrest of Ben and his team.",
+        date: "March 11, 2026",
+        description: "",
+        url: "https://drive.google.com/file/d/1mD4ycq7JrSnURFgnAqt76YNf6mF614p4/view?usp=sharing",
+        type: "PDF",
       },
     ],
   },
