@@ -135,7 +135,7 @@ export const DOCUMENTS: DocCategory[] = [
         date: "March 27, 2026",
         description: "Detailed records where they are listed as a debtor.",
         url: "https://drive.google.com/file/d/1LKs4tetOSjRIohlDBYqgG0XD9IQ5skSS/view?usp=drive_link",
-        type: "Folder",
+        type: "PDF",
       },
       {
         entity: "Legally Mine LLC",
@@ -143,7 +143,7 @@ export const DOCUMENTS: DocCategory[] = [
         date: "May 27, 2026",
         description: "Detailed records where they are listed as a debtor.",
         url: "https://drive.google.com/file/d/1I3cTaGBAJ-weKXB5-Yu0TbQrhFTmq7jr/view?usp=drive_link",
-        type: "Folder",
+        type: "PDF",
       },
     ],
   },
