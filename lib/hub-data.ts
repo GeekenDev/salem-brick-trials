@@ -127,6 +127,27 @@ export const DOCUMENTS: DocCategory[] = [
     ],
   },
   {
+    category: "UCC Filings",
+    items: [
+      {
+        entity: "BAM Franchising, Inc.",
+        title: "",
+        date: "March 27, 2026",
+        description: "Detailed records where they are listed as a debtor.",
+        url: "https://drive.google.com/file/d/1LKs4tetOSjRIohlDBYqgG0XD9IQ5skSS/view?usp=drive_link",
+        type: "Folder",
+      },
+      {
+        entity: "Legally Mine LLC",
+        title: "",
+        date: "May 27, 2026",
+        description: "Detailed records where they are listed as a debtor.",
+        url: "https://drive.google.com/file/d/1I3cTaGBAJ-weKXB5-Yu0TbQrhFTmq7jr/view?usp=drive_link",
+        type: "Folder",
+      },
+    ],
+  },
+  {
     category: "Written PR & Press Statements",
     items: [
       {
