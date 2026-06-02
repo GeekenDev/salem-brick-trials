@@ -2,6 +2,7 @@ import { ExternalLink, FileText, FolderOpen } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { DOCUMENTS, SITE } from "@/lib/hub-data"
+import Link from "next/link"
 
 export const metadata = {
   title: "Documents | Salem Brick Trials",
@@ -23,6 +24,10 @@ export default function DocumentsPage() {
               </h1>
               <p className="mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
                 Primary source materials are grouped by category below.
+              </p><br/>
+              <p>
+                Credit: <Link href="https://www.reddit.com/r/RecklessBen/comments/1tpl2l7/compilation_of_all_resources/" target="_blank"> Compilation of all resources
+</Link> 
               </p>
             </div>
 
