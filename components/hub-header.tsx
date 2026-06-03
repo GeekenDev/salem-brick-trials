@@ -8,7 +8,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -16,8 +15,9 @@ import {
 
 const NAV = [
   { label: "Home", href: "/" },
+  { label: "Blog", href: "/blog" },
   { label: "Documents", href: "/documents" },
-  { label: "Timeline of Events", href: "/bam-timeline" },
+  { label: "Timeline", href: "/bam-timeline" },
   { label: "Videos", href: "/videos" },
   { label: "People", href: "/people" },
   { label: "Contact", href: "/contact" },
