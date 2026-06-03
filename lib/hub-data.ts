@@ -261,6 +261,12 @@ export const LINKS: LinkItem[] = [
     url: "https://www.patreon.com/RecklessBen",
     cta: "Patreon",
   },
+   {
+    title: "Help Chrystal Gorman & Benjamin Gorman Fight Back Against BAM Franchising, Inc.",
+    description: "Support the GoFundMe campaign to help them cover legal expenses and rebuild after losing their business.",
+    url: "https://www.gofundme.com/f/help-us-fight-back-against-unfair-business-practices?attribution_id=sl:62289e19-58d2-4b9a-b5e0-147348368fe5&lang=en_US&ts=1780514547&utm_campaign=fp_sharesheet&utm_content=amp17_te-amp20_t1&utm_medium=customer&utm_source=copy_link",
+    cta: "GoFundMe",
+  },
   {
     title: "Reddit",
     description: "Come chat and view realtime updates on /r/RecklessBen.",
