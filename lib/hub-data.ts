@@ -9,7 +9,7 @@ export const SITE = {
   subtitle:
     "A public archive of documents and information surrounding the Bricks & Minifigs situation covered throughout Reckless Ben’s investigative documentary series.",
   // The full Proton Drive folder containing every source document.
-  driveUrl: "https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc",
+  driveUrl: "https://drive.google.com/drive/folders/1OKS0-NUUa5Qfnibo1t1DQVAi9GvFGsZJ?usp=drive_link",
   lastUpdated: "May 2026",
 }
 
@@ -81,7 +81,7 @@ export type DocCategory = {
   items: DocItem[]
 }
 
-const DRIVE = "https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc"
+const DRIVE = "https://drive.google.com/drive/folders/1OKS0-NUUa5Qfnibo1t1DQVAi9GvFGsZJ?usp=drive_link"
 
 export const DOCUMENTS: DocCategory[] = [
   // {
