@@ -169,19 +169,19 @@ export const BLOG_POSTS: BlogPost[] = [
             severity: "Notable",
             title: "Gross margin data is incomplete",
             body:
-              "Item 19 gross margin tables cover only 104 of 153 qualifying stores because some locations did not report reliably. That leaves buyers with an incomplete profitability picture.",
+              "Item 19 gross margin tables cover only 104 of 153 qualifying stores because some locations did not report reliably. That leaves prospective franchise purchasers with an incomplete profitability picture.",
             sources: [{ label: "Item 19 - Tables 3-4 (p. 62-63)", page: 62 }],
           },
           {
             severity: "Notable",
             title: "Washington AG action over no-poach clauses",
             body:
-              "BAM entered into an Assurance of Discontinuance in 2019 over franchise no-poach provisions. The matter was resolved, but it still signals an earlier governance issue worth noting.",
+              "BAM entered into an Assurance of Discontinuance in 2019 over franchise no-poach provisions.  The Washington Attorney General’s investigation found that BAM Franchising’s franchise agreements contained restrictive language that prevented individual store owners from soliciting or hiring workers from competing or neighboring Bricks & Minifigs franchises. Resolution: Under the AOD, BAM Franchising agreed to cease utilizing and enforcing these restrictive employment provisions across its network and to remove the no-poach language from all of its standard franchise agreements.",
             sources: [{ label: "Item 3 - Litigation (p. 13)", page: 13 }],
           },
           {
             severity: "Notable",
-            title: "Franchisor is not contractually required to defend trademarks",
+            title: "BAM is not contractually required to defend trademarks",
             body:
               "Item 13 says BAM is not obligated under the franchise agreement to protect marks or defend franchisees against infringement claims. The company says it intends to do so as a matter of policy, but that is discretionary.",
             sources: [{ label: "Item 13 - Trademarks (p. 50)", page: 50 }],

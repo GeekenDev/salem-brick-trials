@@ -192,7 +192,7 @@ export default function BlogPage() {
                   Back to home
                 </Link>
                 <a
-                  href="https://drive.proton.me/urls/7S5XSPWJF4#rQxnVZe5sUVc"
+                  href="https://drive.google.com/drive/folders/11QPsJh_gAW6eYeNuO_6ZvuQKHPbhz_Le?usp=drive_link"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-between rounded-lg border border-border px-3 py-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
